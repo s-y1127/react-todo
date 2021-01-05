@@ -8,7 +8,7 @@ export const CompleteTodos = (props) => {
       <ul>
         {todos.map((todo, index) => {
           return (
-            <div className="list-row">
+            <div className="list-row" key={index}>
               <li>{todo}</li>
               <button
                 onClick={() => {
